@@ -47,6 +47,7 @@ const Header = () => {
 
   const navItems = [
     { path: '/', label: 'Home' },
+    { path: '/puzzle-journey', label: 'Puzzle Journey' },
   ];
 
   return (
