@@ -10,7 +10,7 @@ function MainPage() {
   return (
     <div className="cicada-container">
       <header className="cicada-header">
-        <h1 className="cicada-title">Cicada: The Ultimate Puzzle Challenge</h1>
+        <h1 className="cicada-title">Cicada 036: The Ultimate Puzzle Challenge</h1>
       </header>
 
       <main className="cicada-content">
@@ -87,7 +87,7 @@ function MainPage() {
       </main>
 
       <footer className="cicada-footer">
-        <p className="cicada-text">&copy; Cicada 3301</p>
+        <p className="cicada-text">&copy; Cicada 036</p>
       </footer>
     </div>
   );
