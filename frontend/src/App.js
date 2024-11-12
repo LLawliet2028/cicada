@@ -9,11 +9,11 @@ import Puzzle1 from "./Pages/Puzzle1";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/puzzle-journey" element={<PuzzleJourney />} />
-        <Route path="/puzzle/1" element={<Puzzle1 />} />
+        {/* <Route path="/puzzle-journey" element={<PuzzleJourney />} />
+        <Route path="/puzzle/1" element={<Puzzle1 />} /> */}
       </Routes>
     </div>
   );
