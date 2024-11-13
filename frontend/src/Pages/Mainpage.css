@@ -1,161 +1,135 @@
-/* Mainpage.css */
 @import url('https://forms.gle/MNmdD7zhXSbYDehP7');
 :root {
-  --primary-color: #4B2D4A;
-  --secondary-color: #F8C8DC;
-  --accent-color: #7D4F7E;
-  --text-color: #333333;
-  --background-color: #F5F5F5;
-  --font-family: 'Roboto Mono', monospace;
+--primary-color: #4B2D4A;
+--secondary-color: #F8C8DC;
+--accent-color: #7D4F7E;
+--text-color: #333333;
+--background-color: #F5F5F5;
+--font-family: 'Roboto Mono', monospace;
 }
-
 .cicada-container {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+background-color: var(--background-color);
+color: var(--text-color);
+font-family: var(--font-family);
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
-
 .cicada-header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+background-color: var(--primary-color);
+color: var(--secondary-color);
+padding: 1.5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
-
 .cicada-logo {
-  max-height: 50px;
+max-height: 50px;
 }
-
 .cicada-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  allign: center;
+font-size: 2.2rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.2rem;
+text-align: center;
 }
-
 .cicada-content {
-  padding: 2rem 1.5rem;
-  flex-grow: 1;
+padding: 2rem 1.5rem;
+flex-grow: 1;
 }
-
 .cicada-subtitle {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  color: var(--accent-color);
+font-size: 1.8rem;
+font-weight: 700;
+margin-bottom: 1.2rem;
+color: var(--accent-color);
 }
-
 .cicada-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+font-size: 1rem;
+line-height: 1.6;
+margin-bottom: 1.5rem;
 }
-
 .cicada-list {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+list-style-type: none;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1.5rem;
 }
-
 .cicada-item {
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+background-color: white;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+padding: 1.5rem;
 }
-
 .cicada-item-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin-bottom: 0.8rem;
+font-size: 1.4rem;
+font-weight: 700;
+color: var(--accent-color);
+margin-bottom: 0.8rem;
 }
-
 .cicada-item-text {
-  font-size: 1rem;
-  line-height: 1.5;
+font-size: 1rem;
+line-height: 1.5;
 }
-
 .cicada-cta {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  padding: 2rem 1.5rem;
-  text-align: center;
+background-color: var(--accent-color);
+color: var(--secondary-color);
+padding: 2rem 1.5rem;
+text-align: center;
 }
-
 .cicada-button {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+display: inline-block;
+background-color: var(--secondary-color);
+color: var(--accent-color);
+font-size: 1rem;
+font-weight: 600;
+padding: 0.8rem 1.5rem;
+border-radius: 0.5rem;
+text-decoration: none;
+transition: background-color 0.3s, color 0.3s;
 }
-
 .cicada-button:hover {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
+background-color: var(--accent-color);
+color: var(--secondary-color);
 }
-
-/* Responsive Styles */
+/ Responsive Styles */
 @media (max-width: 768px) {
-  .cicada-title {
-    font-size: 1.8rem;
-  }
-
-  .cicada-subtitle {
-    font-size: 1.4rem;
-  }
-
-  .cicada-text,
-  .cicada-item-text {
-    font-size: 0.9rem;
-  }
-
-  .cicada-list {
-    grid-template-columns: 1fr;
-  }
-
-  .cicada-button {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
-  }
+.cicada-title {
+font-size: 1.8rem;
 }
-
+.cicada-subtitle {
+font-size: 1.4rem;
+}
+.cicada-text,
+.cicada-item-text {
+font-size: 0.9rem;
+}
+.cicada-list {
+grid-template-columns: 1fr;
+}
+.cicada-button {
+font-size: 0.9rem;
+padding: 0.6rem 1.2rem;
+}
+}
 @media (max-width: 480px) {
-  .cicada-title {
-    font-size: 1.6rem;
-  }
-
-  .cicada-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .cicada-text,
-  .cicada-item-text {
-    font-size: 0.85rem;
-  }
-
-  .cicada-item {
-    padding: 1.2rem;
-  }
-
-  .cicada-item-title {
-    font-size: 1.2rem;
-  }
-
-  .cicada-button {
-    font-size: 0.8rem;
-    padding: 0.5rem 1rem;
-  }
+.cicada-title {
+font-size: 1.6rem;
+}
+.cicada-subtitle {
+font-size: 1.2rem;
+}
+.cicada-text,
+.cicada-item-text {
+font-size: 0.85rem;
+}
+.cicada-item {
+padding: 1.2rem;
+}
+.cicada-item-title {
+font-size: 1.2rem;
+}
+.cicada-button {
+font-size: 0.8rem;
+padding: 0.5rem 1rem;
+}
 }
