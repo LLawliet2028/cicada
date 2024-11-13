@@ -12,7 +12,7 @@ function MainPage() {
       <header className="cicada-header">
         <h1 className="cicada-title">Cicada 036: The Ultimate Puzzle Challenge</h1>
         <div className="cicada-logo-container">
-           <img src="./assets/ROSPINOT_2-removebg-preview.png" alt="Cicada 036 Logo" className="cicada-logo" />
+           <img src="/frontend/src/assets/ROSPINOT_2-removebg-preview.png" alt="Cicada 036 Logo" className="cicada-logo" />
       </div>
       </header>
 
