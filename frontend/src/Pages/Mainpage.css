@@ -21,19 +21,20 @@
   color: var(--secondary-color);
   padding: 1.5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
+
 .cicada-logo {
   max-height: 50px;
-  allign: left;
+  margin-right: 1rem;
 }
+
 .cicada-title {
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  allign: cente;
+  flex-grow: 1;
 }
 .cicada-content {
   padding: 2rem 1.5rem;
