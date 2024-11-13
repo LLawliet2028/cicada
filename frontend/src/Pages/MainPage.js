@@ -1,6 +1,6 @@
 import React from 'react';
 import './Mainpage.css';
-import Logo from './assets/ROSPINOT_2-removebg-preview.png';
+import Logo from '../assets/ROSPINOT_2-removebg-preview.png';
 
 function MainPage() {
   const handleJoinClick = () => {
