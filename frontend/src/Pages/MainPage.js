@@ -1,5 +1,6 @@
 import React from 'react';
 import './Mainpage.css';
+import Logo from './assets/ROSPINOT_2-removebg-preview.png';
 
 function MainPage() {
   const handleJoinClick = () => {
@@ -11,9 +12,9 @@ function MainPage() {
     <div className="cicada-container">
       <header className="cicada-header">
         <h1 className="cicada-title">Cicada 036: The Ultimate Puzzle Challenge</h1>
-        <div className="cicada-logo-container">
-           <img src="/frontend/src/assets/ROSPINOT_2-removebg-preview.png" alt="Cicada 036 Logo" className="cicada-logo" />
-      </div>
+         <div className="cicada-logo-container">
+            <img src={Logo} alt="Cicada 036 Logo" className="cicada-logo" />
+         </div>
       </header>
 
       <main className="cicada-content">
