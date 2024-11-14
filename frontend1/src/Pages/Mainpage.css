@@ -22,15 +22,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.center-img{
+
+  background: 
+  url("../assets/cicda.png"),
+  linear-gradient(to  bottom, black, transparent),
+  linear-gradient(to  top, black 0.5%,  transparent),
+  url("../assets/number1.jpeg");
+  background-repeat: no-repeat;
+  background-size: 70% 80%, 100% 100%, 100%,100%,100% 100%;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .Background-img{
   height: 90vh;
   width: 100%;
-  background: 
-  linear-gradient(to  bottom, black, transparent),
-  url("../assets/home.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  display: flex;
 }
 .Ball-up{
   position: fixed;
@@ -83,13 +93,17 @@
   margin-bottom: 50px;
 }
 #start-journey-btn {
+  width: 200px;
+  height: 50px;
   background-color: #000000;
   color : white;
   padding: 12px;
   font-family: Lemon-Milk;
+  font-size: 18px;
   border: 0;
   border-radius: 4px;
   transition: transform 0.25s ease-in-out;
+  box-shadow: 0px 0px 10px 3px #00ff00 ;
 }
 
 #start-journey-btn:hover{
@@ -104,6 +118,22 @@
   }
   .center-img{
     height: 150px;
+  }
+
+  .center-img{
+    background: 
+    url("../assets/cicda.png"),
+    linear-gradient(to  bottom, black, transparent),
+    linear-gradient(to  top, black 0.5%,  transparent),
+    url("../assets/number1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 140% 50%, 100% 100%, 100%,100%,100% 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    
   }
 }
 
