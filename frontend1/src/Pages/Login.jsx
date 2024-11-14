@@ -21,7 +21,7 @@ function Login() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     console.log('Login data:', formData);
-    const res = await fetch("/api/team/login",{
+    const res = await fetch("http://localhost:3000/api/team/login",{
       method:"POST",
       headers: {
         'Content-Type': 'application/json'
@@ -29,6 +29,7 @@ function Login() {
       body: JSON.stringify(formData),
     })
     const data = await res.json();
+    localStorage.setItem('jwt', data.token);
     console.log(data);
     if(res.ok){
      navigate("/");
