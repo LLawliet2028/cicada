@@ -31,6 +31,13 @@ function MainPage() {
 
 
       <div className="cicada-container">
+        <div className='center-img-mobile'>
+        <div className='start-journey'>
+              <Link to="/puzzle-journey">
+              <button id="start-journey-btn">Start Quiz</button>
+            </Link>
+          </div>
+        </div>
         <div className="center-img">
           <div className="Background-img">
             <div className="Ball-up">
