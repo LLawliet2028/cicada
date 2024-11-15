@@ -252,7 +252,6 @@ the answer's what remains, though it may drive you insane</p>
           </button>
         ))}
       </div>
-      <p style={{ color: '#00ff00', 'font-size' : '24px','padding' : '14px' }}>Time left: {timeLeft} seconds</p>
       {renderStep()}
       <ToastContainer position="top-center" autoClose={5000} />
     </div>

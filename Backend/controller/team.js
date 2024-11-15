@@ -247,6 +247,32 @@ const getCorrectCount = async (req, res) => {
         });
     }
 };
+const updateTimeController = async (req, res) => {
+    try {
+        // Get the teamId from the request (either from the body or URL params)
+        const teamId = req.params.teamId || req.team._id; // Using team ID from params or authenticated team
 
+        // Find and update the time field for the specific TeamAnswer document
+        const teamAnswer = await TeamAnswer.findOneAndUpdate(
+            { TeamId: teamId },
+            { $set: { time: Date.now() } }, // Update the time field to the current time
+            { new: true } // Return the updated document
+        );
 
-export {signupController,LoginController,Logout,getAns,postAns,updateCorrectCount,getCorrectCount};
+        // If no teamAnswer document found, return an error
+        if (!teamAnswer) {
+            return res.status(404).json({ message: "Team answer not found" });
+        }
+
+        // Return success response with the updated team answer document
+        return res.status(200).json({
+            message: "Time updated successfully",
+            teamAnswer: teamAnswer
+        });
+    } catch (error) {
+        console.error("Error updating time:", error);
+        res.status(500).json({ message: "Internal server error", error: error.message });
+    }
+};
+
+export {signupController,LoginController,Logout,getAns,postAns,updateCorrectCount,getCorrectCount,updateTimeController};

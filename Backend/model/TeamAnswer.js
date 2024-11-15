@@ -12,6 +12,10 @@ const teamAnswerSchema = new Schema({
     type: Number,
     default: 0,
   },
+  time: {
+    type: Date,
+      // Default to current time when a document is created
+  }
 });
 
 export default mongoose.model("TeamAnswer", teamAnswerSchema);

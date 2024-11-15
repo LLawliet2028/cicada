@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./App.css"; // Add your CSS here or in a separate file
+import "./winners.css" // Add your CSS here or in a separate file
 
-const winners = ({ onClose }) => {
+const Winners = ({ onClose }) => {
   const [useImages, setUseImages] = useState(false); // Toggle between lines and images
   const images = Array(15).fill("./img/img2.png"); // Placeholder for image paths
 
@@ -45,4 +45,4 @@ const App = () => {
   );
 };
 
-export default winners;
+export default Winners;
