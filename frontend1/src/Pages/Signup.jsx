@@ -32,7 +32,10 @@ function Signup() {
     })
     const data = await res.json();
     console.log(data);
-    
+    if(localStorage.getItem('jwt')){
+      localStorage.removeItem('jwt')
+    }
+    localStorage.setItem('jwt', data.token);
     navigate("/");
   };
 

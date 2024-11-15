@@ -79,13 +79,21 @@ const signupController = async(req,res)=>{
             member2:member2,
             member3:member3,
         })
+        const token = jwt.sign(
+            {
+                // Ensure teamId is a string
+                email: team.leader_email
+            },
+            JWT_SECRET,
+            { expiresIn: '24h' }
+        );
         if (teamdata) {
           
            return res.status(201).json({
                 teamdata
             });
         } else {
-            return res.status(400).json({ message: "Invalid team data" });
+            return res.status(400).json({ message: "Invalid team data" ,token:token});
         }
     } catch (error) {
         console.log(error);

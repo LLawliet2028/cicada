@@ -31,12 +31,6 @@ const Puzzle3 = () => {
   const checkFinalAnswer = async() => {
     if (finalAnswer.trim().toLowerCase() === 'nichirin sword') {
       toast.success('Correct! You have completed this puzzle!');
-      const token = localStorage.getItem('jwt'); // or wherever you store the token
-      console.log(token)
-  if (!token) {
-      console.error("No authentication token found.");
-     navigate('/login')
-  }
       // You can redirect or perform another action after the final answer is correct
       try {
         await axios.post(`http://localhost:3000/api/team/updateCount`, { isCorrect: true }, {
@@ -44,10 +38,10 @@ const Puzzle3 = () => {
               'authorization': `Bearer ${token}`  // Adding the token as Bearer token in the Authorization header
           }
       });
-        
+        setShowSuccess(true);
         
         setTimeout(() => {
-          
+          setShowSuccess(false);
           navigate('/puzzle/4');
         }, 3000);
       } catch (error) {
@@ -56,7 +50,7 @@ const Puzzle3 = () => {
       
       }
       setShowFinalInput(false); 
-     // Hide input after correct answer
+      navigate('/puzzle/5')// Hide input after correct answer
     } else {
       toast.error('Incorrect answer. Try again!');
     }
